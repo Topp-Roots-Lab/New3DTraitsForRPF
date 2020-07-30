@@ -33,9 +33,9 @@ function [f, cf] = kde_traits(inputPath, slicethickness, sampling)
     [cf, cxi] = ksdensity(cz, pts, 'bandwidth', 20); %density estimator for the convex hull
 
     for i = 1:length(f)
-        fprintf(1, "%s biomass_vhist%d %f\n", inputPath, i, f(i));
+        fprintf(1, "%s biomass_vhist%d %.13f\n", inputPath, i, f(i));
     end
 
     for i = 1:length(cf)
-        fprintf(1, "%s convexHull_vhist%d %f\n", inputPath, i, cf(i));
+        fprintf(1, "%s convexHull_vhist%d %.13f\n", inputPath, i, cf(i));
     end
