@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="/home/topplab/Downloads/tparker/Projects/kde_traits.prj" location="/home/topplab/Downloads/tparker/Projects" name="kde_traits" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="1196331416" file="/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF/kde_traits.prj" location="/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF" name="kde_traits" preferred-package-location="/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF/kde_traits/for_redistribution" preferred-package-type="package.type.install" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>kde_traits</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.0</param.version>
+    <param.version>2.0</param.version>
     <param.authnamewatermark>Mao Li</param.authnamewatermark>
     <param.email />
     <param.company />
@@ -41,7 +41,7 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
     <param.package.mcr>true</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
     <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
-    <param.package.mcr.name>standalone_installer</param.package.mcr.name>
+    <param.package.mcr.name>kde_traits_standalone_installer</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>false</param.windows.command.prompt>
     <param.create.log>false</param.create.log>
@@ -53,7 +53,6 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
     <unset>
       <param.icon />
       <param.icons />
-      <param.version />
       <param.email />
       <param.company />
       <param.summary />
@@ -83,18 +82,18 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
       <param.help.text />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}/New3DTraitsForRPF/kde_traits.m</file>
+      <file>${PROJECT_ROOT}/kde_traits.m</file>
     </fileset.main>
     <fileset.resources />
     <fileset.package />
     <fileset.depfun>
-      <file>${PROJECT_ROOT}/New3DTraitsForRPF/findND.m</file>
+      <file>${PROJECT_ROOT}/findND.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="readme.txt" optional="true">/home/topplab/Downloads/tparker/Projects/kde_traits/for_testing/readme.txt</file>
-      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="splash.png" optional="false">/home/topplab/Downloads/tparker/Projects/kde_traits/for_testing/splash.png</file>
-      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="run_kde_traits.sh" optional="false">/home/topplab/Downloads/tparker/Projects/kde_traits/for_testing/run_kde_traits.sh</file>
-      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="kde_traits" optional="false">/home/topplab/Downloads/tparker/Projects/kde_traits/for_testing/kde_traits</file>
+      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="kde_traits" optional="false">/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF/kde_traits/for_testing/kde_traits</file>
+      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="readme.txt" optional="true">/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF/kde_traits/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="splash.png" optional="false">/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF/kde_traits/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/kde_traits/for_testing" name="run_kde_traits.sh" optional="false">/media/scratch/tparker/Downloads/Projects/New3DTraitsForRPF/kde_traits/for_testing/run_kde_traits.sh</file>
     </build-deliverables>
     <workflow />
     <matlab>
@@ -135,7 +134,7 @@ ${LD_LIBRARY_PATH}:MR/v94/runtime/glnxa64:MR/v94/bin/glnxa64:MR/v94/sys/os/glnxa
       <vista>false</vista>
       <linux>true</linux>
       <solaris>false</solaris>
-      <osver>4.15.0-88-generic</osver>
+      <osver>4.15.0-136-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>glnxa64</arch>
