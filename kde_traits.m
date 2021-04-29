@@ -1,9 +1,10 @@
 %This is part of the features derived for the manuscript
 %Shao et al. Root Pulling Force
 
-function [f, cf] = kde_traits(inputPath, slicethickness, sampling, depth = 200)
+function [f, cf] = kde_traits(inputPath, slicethickness, sampling, depth)
     slicethickness = str2double(slicethickness);
     sampling = str2num(sampling);
+    depth = str2num(depth);
     %compute vertical density for fixed depth
     filePattern = fullfile(inputPath, '*.png');
     file = dir(filePattern); %3D X-ray binary image slices
